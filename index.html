@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixMyCar - Mobile Car Repair Service</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-2xl font-bold text-blue-600">FixMyCar</span>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#how" class="hover:text-blue-600">How It Works</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+      <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+        Book Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        We Repair Your Car <span class="text-blue-600">At Your Doorstep</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        Book a mechanic, we fix your car, and deliver it back to you — no need to leave your home.
+      </p>
+      <div class="flex gap-4">
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Book a Repair
+        </a>
+        <a href="#services" class="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+          Our Services
+        </a>
+      </div>
+    </div>
+    <div class="flex-1">
+        <img src="https://picsum.photos/600/400" alt="Mechanic fixing car" class="rounded-xl shadow-lg w-full" />    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="p-6 border rounded-xl hover:shadow-md transition">
+          <div class="text-blue-600 text-3xl mb-3">🔧</div>
+          <h3 class="text-xl font-semibold mb-2">General Repair</h3>
+          <p class="text-gray-600 text-sm">Engine, brakes, and everyday mechanical fixes done at your doorstep.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl hover:shadow-md transition">
+          <div class="text-blue-600 text-3xl mb-3">🔋</div>
+          <h3 class="text-xl font-semibold mb-2">Battery & Electrical</h3>
+          <p class="text-gray-600 text-sm">Battery replacement, wiring issues, and electrical diagnostics.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl hover:shadow-md transition">
+          <div class="text-blue-600 text-3xl mb-3">🚗</div>
+          <h3 class="text-xl font-semibold mb-2">Pickup & Delivery</h3>
+          <p class="text-gray-600 text-sm">We collect your car, repair it at our shop, and bring it back to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+
+        <div>
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full mx-auto mb-4 font-bold">1</div>
+          <h4 class="font-semibold mb-1">Book Online</h4>
+          <p class="text-sm text-gray-600">Tell us what's wrong with your car.</p>
+        </div>
+
+        <div>
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full mx-auto mb-4 font-bold">2</div>
+          <h4 class="font-semibold mb-1">We Pick It Up</h4>
+          <p class="text-sm text-gray-600">Our driver collects your car from home.</p>
+        </div>
+
+        <div>
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full mx-auto mb-4 font-bold">3</div>
+          <h4 class="font-semibold mb-1">We Repair It</h4>
+          <p class="text-sm text-gray-600">Our certified mechanics fix the issue.</p>
+        </div>
+
+        <div>
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full mx-auto mb-4 font-bold">4</div>
+          <h4 class="font-semibold mb-1">We Deliver It Back</h4>
+          <p class="text-sm text-gray-600">Your car returns to your doorstep, ready to drive.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <!-- Booking Form -->
+  <section id="contact" class="bg-blue-600 py-20">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+        <h2 class="text-3xl font-bold text-center mb-2">Book a Repair</h2>
+        <p class="text-gray-600 text-center mb-8">Fill in your details and we'll come to you.</p>
+
+        <form class="space-y-5">
+
+          <div>
+            <label for="name" class="block text-sm font-semibold mb-1">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="John Doe"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-semibold mb-1">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+1 234 567 890"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <label for="address" class="block text-sm font-semibold mb-1">Pickup Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              required
+              placeholder="Street, City"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <label for="issue" class="block text-sm font-semibold mb-1">What's wrong with your car?</label>
+            <textarea
+              id="issue"
+              name="issue"
+              rows="4"
+              required
+              placeholder="e.g. Engine won't start, strange noise while braking..."
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            Book Now
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    © 2026 FixMyCar. All rights reserved.
+  </footer>
+
+</body>
+</html>
